@@ -13,6 +13,9 @@ PALETTE
 	@brand-secondary-highlight:	#98A3AE;	// 5 shades up from 2o
 
 	@brand-body: 				#E8EBEE;	// 9 shades up from 2o
+	@brand-body-lighter: 		#f9fbff;	// #fafcff #f9fcff;	// based on brand-body
+	@body-fill: 				#fcfcff;	// 
+	@body-fill-lightest: 				fefeff;
 
 	@lightest: 					#F2F7F3;	// #E9EBED 9 shades up from 1o
 	@light: 					#DADEDB;	// 
@@ -20,7 +23,7 @@ PALETTE
 	@mid: 						#AAACAB;	// 
 	@middark: 					#929393;	// 
 	@dark: 						#7A7A7B;	// 
-	@darkest: 					#322F33;	// 
+	@darkest: 					#211e44;	// 
 
 
 
@@ -47,13 +50,20 @@ ICON COLORS
 	@brand-selection-5: #EA4C89;
 
 
+/*
+LINKS
+*/
+
+@link_color: @brand-selection-3;
+@link_light_color: #F2F7F3;
+
 .a-light {
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-weight: 700;
-  color: #F2F7F3;
+  color: @link_light_color;
 }
 .a-light:hover {
   color: #AAACAB;
@@ -66,3 +76,15 @@ ICON COLORS
 }
 
 
+/*
+TYPOGRAPHHY
+*/
+	@body-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+	@headings-font-family: "Open Sans", Arial, sans-serif;
+	@headings-font-family-alt: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+  	@headings-font-weight: 700;
+  	@headings-color: #000;
+  	@headings-border-color: #000;
+  	@link-font-family: "Open Sans", Arial, sans-serif;  	

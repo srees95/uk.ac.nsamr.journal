@@ -18,11 +18,11 @@
 <!--end call to action-->
 
 <!-- Breadcrumbs -->
-<div class="row" style="background: url('{$baseUrl}/plugins/themes/nsamr/templates/images/patterns/brick-wall-E8EBEE-1920x1080.png') repeat; padding: 10px 0 10px 0;" class="col-sm-12 hidden-xs text-right">
+<div class="row" style="background: url('{$baseUrl}/plugins/themes/nsamr/templates/images/patterns/brickwall_@2X.png') repeat; padding: 10px 0 10px 0;" class="col-sm-12 hidden-xs text-right">
     <div class="container">
         <div class="row pull-right">
             <ol class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{$baseUrl}">Home</a></li>
                 <li>User Guides</li>
             </ol>
         </div>
@@ -65,33 +65,101 @@
     </div>
     <div class="container">
         <div class="row">
-            <p>Thank you for considering to make a submission with JSAMR. This guide will walk you through the steps of making a submission on the website.</p>
+            <p>Thank you for considering submitting a manuscript to JSAMR. This guide will walk you through the steps to make a submission through our website.</p>
             <div class="left-heading">1. Register to be an author</div>
             <div>
-                <p><a href="/journal/journal-machinery/ojs-3.0.1/index.php/jnsamr/user/register">Register</a> on  to create an account as an author.</p>
-                
+                <p><a href="/journal/journal-machinery/ojs-3.0.1/index.php/jnsamr/user/register">Register</a> an account. Please include any middle names you have, and use an academic email address so we can verify your status more easily.</p>
             </div>
         </div>
         <hr>
 
-
         <div class="row">
-            <div class="left-heading">2. Prepare Submission</div>
+            <div class="left-heading">2. Prepare your manuscript</div>
             <div>
-                <p>How to <a href="howtosubmit.php">submit</a> your work.</p>
-                <p>This page outlines how to prepare your work before a submission to improve the likelihood of acceptance and publication.</p> 
-                <p>Ready to submit? Click ‘New Submission’</p>
+                <p>Please read the page outlining our <a href="{url router=$smarty.const.ROUTE_PAGE page='about' op='submissionprocess'}">submission process</a>, which describes how to prepare your work before submission to improve the likelihood of acceptance and publication.</p> 
+                <p>Ready to submit? Click <a href="{$baseUrl}/index.php/jnsamr/submission">here</a> to make a new submission (login required).</p>
             </div>
         </div>  
         <hr>
 
         <div class="row">
-            <div class="left-heading">3. Submit Manuscript</div>
+            <div class="left-heading id="submissionchecklist">3. Submission Checklist</div>
+            <div class="container">
+                <div class="row">   
+                    <p>To increase the chance of your submission being accepted please ensure the following:</p>
+
+                    <div class="container" style="margin-left: 20px">
+                        <div class="left-subheading">Author Information</div>
+                        <ul class="list-unstyled highlight-list">
+                            <li><i class="fa fa-square-o icon-with-space"></i>The first author is/was a medical student, at a current registered medical school, at the time of submission.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>The submission has not been previously published elsewhere.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>The submission is not currently submitted to another journal for consideration.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>All co-authors are listed with their institutions.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>All conflicts of interest have been declared.</li>
+                        </ul>
+
+                        <div class="left-subheading">Manuscript Length and Formatting</div>
+                        <ul class="list-unstyled highlight-list">
+                            <li><i class="fa fa-square-o icon-with-space"></i>The file has been submitted as a PDF either using one of <a href="https://github.com/NSAMR/uk.ac.nsamr.journal/tree/master/latex-templates/article">our LaTeX templates</a> or in an unstyled word document that adheres to JSAMR's <a href="{url router=$smarty.const.ROUTE_PAGE page='about' op='manuscriptguidance'}">Manuscript Guidance</a>.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>The word count is below the word limit for the specific manuscript type.</li>
+                        </ul>
+
+                        <div class="left-subheading">Tables</div>
+                        <ul class="list-unstyled highlight-list">
+                            <li><i class="fa fa-square-o icon-with-space"></i>All tables and table legends are in numerical order and embedded in the body of the text.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>All tables are cited in the text.</li>
+                        </ul>
+
+                        <div class="left-subheading">Figures</div>
+                        <ul class="list-unstyled highlight-list">
+                            <li><i class="fa fa-square-o icon-with-space"></i>All figures and figure legends are in numerical order and embedded in the body of the text.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>All figures are cited in the text.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>All figures have also been uploaded as supplementary files.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>All figures are either in a vector graphics format, or have a resolution of 600dpi or above</li>
+                        </ul>
+
+                        <div class="left-subheading">References</div>
+                        <ul class="list-unstyled highlight-list">
+                            <li><i class="fa fa-square-o icon-with-space"></i>All references are cited in the text if appropriate.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>APA referencing style is used throughout.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>The bibliography and citations comply with JSAMR's <a href="{url router=$smarty.const.ROUTE_PAGE page='about' op='manuscriptguidance'}">Manuscript Guidance</a>.</li>
+                        </ul>
+
+                        <div class="left-subheading">Confidentiality</div>
+                        <ul class="list-unstyled highlight-list">
+                            <li><i class="fa fa-square-o icon-with-space"></i>All patient-identifiable information is anonymised.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>Only the minimum possible patient information required to achieve the intended research purpose has been included.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>If personal medical information about an identifiable living individual is included, a JSAMR consent form has been signed by the individual in question and is submitted alongside the manuscript.</li>
+                        </ul> 
+
+                        <div class="left-subheading">Permissions</div>
+                        <ul class="list-unstyled highlight-list">
+                            <li><i class="fa fa-square-o icon-with-space"></i>All statements of consent, confidentiality, conflicts of interest and ethics have been included.</li>
+                        </ul>                                                                                                
+
+                        <div class="left-subheading">Copyright</div>
+                        <ul class="list-unstyled highlight-list">
+                            <li><i class="fa fa-square-o icon-with-space"></i>Copyright permission for any figures or tables published elsewhere been obtained.</li>
+                            <li><i class="fa fa-square-o icon-with-space"></i>All listed authors have read and agree to be bound by JSAMR's copyright policy.</li>                                                                     
+                        </ul>   
+
+                        <div class="left-subheading">Revised manuscript</div>
+                        <ul class="list-unstyled highlight-list">
+                            <li><i class="fa fa-square-o icon-with-space"></i>If you are resubmitting a revised manuscript, you have included a document that notes your changes including applicable line numbers, or a marked-up copy that highlights your changes.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <hr>
+
+        <div class="row">
+            <div class="left-heading">4. Submit your manuscript</div>
             <div>
                 <ol>
-                <li>Section: Select your article type from the drop-down menu</li>
-                <li>Submission requirements: All the requirements should be ticked</li>
-                <li>Comments for the Editor: Choose the most suitable 2-3 codes for your article/letter from the following:</li> 
+                <li>Section: Select your manuscript type from the drop-down menu</li>
+                <li>Submission requirements: Please read all the items in the list, and check the boxes to indicate your agreement. If you do not agree to any of our requirements, please <a href="{url router=$smarty.const.ROUTE_PAGE page="about" op="contact"}">get in touch</a> with us.</li>
+                <li>Comments for the Editor: Choose two or three of the most suitable codes for your manuscript from the following:</li> 
                 <div class="container">            
                   <table class="table">
                     <thead>
@@ -272,7 +340,7 @@
         <hr>
 
         <div class="row">
-            <div class="left-heading">4. Upload File</div>
+            <div class="left-heading">5. Upload File</div>
             <div>
                 <ol>
                 <li>Upload the respective file after you select the component of your work that you wish to upload</li>
@@ -298,7 +366,7 @@
         <hr>
 
         <div class="row">
-            <div class="left-heading">5. Finalising Submission</div>
+            <div class="left-heading">6. Finalising Submission</div>
             <div>
                 <p>Confirmation - Once you have reviewed all sections and are confident to make the submission, click ‘Finish Submission’</p>
             </div>
@@ -306,7 +374,7 @@
         <hr>
 
         <div class="row">
-            <div class="left-heading">6. Track your Submission</div>
+            <div class="left-heading">7. Track your Submission</div>
             <div>
                 <p>Once your submission has undergone a cycle of peer review and been assigned a decision, you will receive an email notification to log in and check the website.</p>
                 <p> Click on ‘Editor Decision’ to view the outcome which can be one of the following:</p>
@@ -326,7 +394,7 @@
         <hr>
 
         <div class="row">
-            <div class="left-heading">7. Copy Editing</div>
+            <div class="left-heading">8. Copy Editing</div>
             <div>
                 <p>Once your manuscript has been accepted it will then be sent to copy editing, which checks for grammatical errors. You will then be emailed a final draft for you to check over and approve. Once this draft has been approved it will be published</p>
             </div>
@@ -425,7 +493,7 @@
             <div>
                 <ol>
                     <li>You should have received an email from the Journal Editors with the title “Article review request”. This means you have already been assigned as the Section Editor in charge of this manuscript.</li>
-                    <li><a href="/journal/journal-machinery/ojs-3.0.1/index.php/jnsamr/login">Login</a> with your username and password. If you do not have an account, <a href="/journal/journal-machinery/ojs-3.0.1/index.php/jnsamr/user/register">register</a>.</li>
+                    <li><a href="{url router=$smarty.const.ROUTE_PAGE page="login"}">Log in</a> with your username and password. If you do not have an account, please <a href="{url router=$smarty.const.ROUTE_PAGE page="user" op="register"}">register</a>.</li>
                     <li>Once logged in, click “Tasks” on left hand tab on screen</li>
                     <li>If you have a manuscript due to be sent out to reviewers, you should have a notification on the “tasks” tab. Sometimes this does not register so regardless whether you have notifications on “tasks” or not, check your “My Assigned” tab and you should see the new manuscript submitted, with the stage as “Submission”. </li>
                     <li>Click on “Submissions”</li>
